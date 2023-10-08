@@ -12,6 +12,8 @@ SocksPort 127.0.0.1:9050
 
 ## Usage
 
+1. Start tor
+
 ```ruby
 require 'proxied_request'
 
