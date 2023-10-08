@@ -33,5 +33,6 @@ puts response.body # =>
 config = ProxiedRequest::Config.new
 config.set_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0')
 config.type = MethodType::POST
+config.body = 'foo=bar'
 response = ProxiedRequest::HTTP.request('https://api.ipify.org', config)
 puts response.body # =>

@@ -51,6 +51,8 @@ module ProxiedRequest
                 request.add_field(key, value)
             end
 
+            request.body = config.get_body
+
             http.open_timeout = config.get_timeout
 
             response = http.request(request)

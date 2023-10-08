@@ -11,8 +11,13 @@ module ProxiedRequest
             @type = MethodType::GET
 
             @headers = {}
+            @body = nil
 
             @timeout = 10
+        end
+
+        def body=(body)
+            @body = body
         end
 
         def type=(type)
@@ -53,6 +58,10 @@ module ProxiedRequest
 
         def get_type
             @type
+        end
+
+        def get_body
+            @body
         end
     end
 end

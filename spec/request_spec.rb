@@ -22,6 +22,8 @@ RSpec.describe ProxiedRequest do
       config = ProxiedRequest::Config.new
       config.type = MethodType::POST
       config.set_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0')
+      config.set_header('Content-Type', 'application/json')
+      config.body = '{"test": "test"}'
 
       response = ProxiedRequest::HTTP.request('https://httpbin.org/post', config)
       puts response.body
