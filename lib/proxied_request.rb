@@ -2,8 +2,7 @@
 
 require_relative "proxied_request/version"
 
-module ProxiedRequest
-    class Error < StandardError; end
+require 'proxied_request/config'
+require 'proxied_request/request'
 
-    e
-end
+
