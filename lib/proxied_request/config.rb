@@ -1,14 +1,22 @@
+require_relative 'types.rb'
+
 module ProxiedRequest
     class Error < StandardError; end
 
     class Config
+
         def initialize
             @proxy = "127.0.0.1"
             @port = 9050
+            @type = MethodType::GET
 
             @headers = {}
 
             @timeout = 10
+        end
+
+        def type=(type)
+            @type = type
         end
 
         def proxy=(proxy)
@@ -41,6 +49,10 @@ module ProxiedRequest
 
         def get_timeout
             @timeout
+        end
+
+        def get_type
+            @type
         end
     end
 end
