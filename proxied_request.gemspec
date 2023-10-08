@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["plusleft"]
   spec.email = ["107749872+0xleft@users.noreply.github.com"]
 
-  spec.summary = "Make HTTP requests through a proxy."
+  spec.summary = "Make HTTP requests through a tor as proxy."
   spec.homepage = "https://github.com/0xleft/proxiedrequest"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proxied_request (0.1.0)
+    proxied_request (0.1.1)
 
 GEM
   remote: https://rubygems.org/

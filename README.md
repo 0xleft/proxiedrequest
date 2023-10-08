@@ -10,9 +10,17 @@ Locate your torrc (**Tor Browser\Browser\TorBrowser\Data\Tor**) file and add the
 SocksPort 127.0.0.1:9050
 ```
 
+Install the gem:
+
+```bash
+gem install proxied_request
+```
+
 ## Usage
 
 1. Start tor
+
+2. Make a request:
 
 ```ruby
 require 'proxied_request'
