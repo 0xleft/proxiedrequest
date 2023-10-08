@@ -4,6 +4,14 @@ Make requests through tor.
 
 ## Installation
 
+Run tor docker container:
+
+```bash
+./tor.sh
+```
+
+### OR
+
 Locate your torrc (**Tor Browser\Browser\TorBrowser\Data\Tor**) file and add the following line:
 
 ```
